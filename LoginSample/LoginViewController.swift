@@ -14,5 +14,10 @@ class LoginViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
     }
-    
+
+	@IBAction func checkCredentials(_ sender: Any) {
+		// Validate credentials here, if all good, then segue
+		performSegue(withIdentifier: "loggedInGUI", sender: self)
+	}
+
 }
