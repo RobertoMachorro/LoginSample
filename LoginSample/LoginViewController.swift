@@ -16,8 +16,10 @@ class LoginViewController: NSViewController {
     }
 
 	@IBAction func checkCredentials(_ sender: Any) {
-		// Validate credentials here, if all good, then segue
-		performSegue(withIdentifier: "loggedInGUI", sender: self)
+		// Validate credentials here, if all good, then switch
+		if let controller = self.storyboard?.instantiateController(withIdentifier: "LoggedInView") as? ViewController {
+			self.view.window?.contentViewController = controller
+		}
 	}
 
 }

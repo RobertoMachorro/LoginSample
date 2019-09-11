@@ -795,7 +795,7 @@
         <!--View Controller-->
         <scene sceneID="qbU-Cw-fvP">
             <objects>
-                <viewController id="S8L-1z-LcU" customClass="ViewController" customModule="LoginSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoggedInView" id="S8L-1z-LcU" customClass="ViewController" customModule="LoginSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="CDm-eB-2jw">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
