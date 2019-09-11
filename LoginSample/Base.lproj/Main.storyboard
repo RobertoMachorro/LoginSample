@@ -701,10 +701,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="LoginSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="LoginViewController" customModule="LoginSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="264"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -792,7 +792,7 @@
         <!--View Controller-->
         <scene sceneID="qbU-Cw-fvP">
             <objects>
-                <viewController id="S8L-1z-LcU" sceneMemberID="viewController">
+                <viewController id="S8L-1z-LcU" customClass="ViewController" customModule="LoginSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="CDm-eB-2jw">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
