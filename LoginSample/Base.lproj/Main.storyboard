@@ -704,7 +704,7 @@
         <!--Login View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="LoginViewController" customModule="LoginSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="264"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -772,7 +772,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="checkCredentials:" target="XfG-lQ-9wD" id="LAC-qe-44d"/>
+                                    <action selector="checkCredentials:" target="XfG-lQ-9wD" id="OWM-sH-deX"/>
                                 </connections>
                             </button>
                         </subviews>

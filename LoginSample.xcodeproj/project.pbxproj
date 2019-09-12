@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E915E734232986A5008BED5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E915E733232986A5008BED5B /* LoginViewController.swift */; };
+		E9562D672329AF8A0017D658 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9562D662329AF8A0017D658 /* LoginViewController.m */; };
 		E9D3250B232983AE000B6E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D3250A232983AE000B6E16 /* AppDelegate.swift */; };
 		E9D3250D232983AE000B6E16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D3250C232983AE000B6E16 /* ViewController.swift */; };
 		E9D3250F232983B0000B6E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D3250E232983B0000B6E16 /* Assets.xcassets */; };
@@ -15,7 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E915E733232986A5008BED5B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9562D642329AF8A0017D658 /* LoginSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoginSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9562D652329AF8A0017D658 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E9562D662329AF8A0017D658 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		E9D32507232983AE000B6E16 /* LoginSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D3250A232983AE000B6E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D3250C232983AE000B6E16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +59,9 @@
 			children = (
 				E9D3250A232983AE000B6E16 /* AppDelegate.swift */,
 				E9D3250C232983AE000B6E16 /* ViewController.swift */,
-				E915E733232986A5008BED5B /* LoginViewController.swift */,
+				E9562D652329AF8A0017D658 /* LoginViewController.h */,
+				E9562D662329AF8A0017D658 /* LoginViewController.m */,
+				E9562D642329AF8A0017D658 /* LoginSample-Bridging-Header.h */,
 				E9D3250E232983B0000B6E16 /* Assets.xcassets */,
 				E9D32510232983B0000B6E16 /* Main.storyboard */,
 				E9D32513232983B0000B6E16 /* Info.plist */,
@@ -98,6 +102,7 @@
 				TargetAttributes = {
 					E9D32506232983AE000B6E16 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -136,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E915E734232986A5008BED5B /* LoginViewController.swift in Sources */,
+				E9562D672329AF8A0017D658 /* LoginViewController.m in Sources */,
 				E9D3250D232983AE000B6E16 /* ViewController.swift in Sources */,
 				E9D3250B232983AE000B6E16 /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LoginSample/LoginSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -285,6 +291,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.machorro.LoginSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginSample/LoginSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -293,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LoginSample/LoginSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -303,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.machorro.LoginSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginSample/LoginSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
